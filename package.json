@@ -2,7 +2,7 @@
   "name": "hangman",
   "version": "1.0.0",
   "description": "A hangman game, users guess letters and try to figure out what the word or phrase is.",
-  "main": "hangman.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "prompt": "^0.2.14"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmona789/Hangman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmona789/Hangman/issues"
+  },
+  "homepage": "https://github.com/jmona789/Hangman#readme"
 }
