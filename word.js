@@ -14,25 +14,28 @@ var Word = function(wrd){
   this.checkIfLetterFound = function(guessLetter){
     whatToReturn = 0;
     for (var i = 0; i < this.lets.length; i++){
-      if (this.lets[i].chrac === guessLetter){
+      if (this.lets[i].charac === guessLetter){
         this.lets[i].appear = true;
         whatToReturn += 1;
       }
     }
+    return whatToReturn
   }
   this.didWeFindTheWord = function(){
-    this.lets.every(function(curLet){
-      if (curLet.appear === true){
-        this.found = true;
-        return this.found;
-      }
-    })
+    if (this.lets.every(function(curLet){
+      return curLet.appear === true
+      }) === true){
+      return true;
+    }else{
+
+    }
   }
   this.wordRender = function(){
     var str = "";
     for (var i = 0; i < this.lets.length; i++){
       str += this.lets[i].letterRender(this.lets[i])
     }
+    return str;
   }
 }
 
