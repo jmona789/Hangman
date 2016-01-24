@@ -23,17 +23,15 @@ var Word = function(wrd){
   }
   this.didWeFindTheWord = function(){
     if (this.lets.every(function(curLet){
-      return curLet.appear === true
+      return curLet.appear === true;
       }) === true){
       return true;
-    }else{
-
     }
   }
   this.wordRender = function(){
     var str = "";
     for (var i = 0; i < this.lets.length; i++){
-      str += this.lets[i].letterRender(this.lets[i])
+      str += this.lets[i].letterRender(this.lets[i]);
     }
     return str;
   }
